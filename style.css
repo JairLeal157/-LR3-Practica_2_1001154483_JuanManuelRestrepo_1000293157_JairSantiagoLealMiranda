@@ -1,0 +1,145 @@
+:root{
+    /* variables */
+    --secundary-color:#ffffff ;
+    --primary-color:#e9d5da ;
+    --loft-primary-color:#ede6db ;
+}
+
+
+body{
+    background-color: var(--loft-primary-color);
+    margin: 0;
+    height: 100vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja{
+
+    background-color: var(--primary-color);
+    width: 1200px;
+    height: 550px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.superior, .inferior{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}   
+
+.display-6{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--secundary-color);
+}
+
+.inputDatosArbol{
+    width: 80%;
+    padding: 0px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+}
+
+
+
+input {
+	background-color: var(--loft-primary-color);
+    border: none;
+    width: 80%;
+    margin: 0;
+    padding: 4px;
+    font-size: 17px;
+    color: black;
+
+}
+input:focus{
+    outline: 1px solid #a3beca;
+}
+
+button {
+    background-color: #8fbdd3; /* Green */
+    border: none;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+
+}
+button:hover {
+	background-color: #a3beca;
+
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.tarjeta{
+    background-color: var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 25%;
+    height: 80%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tituloTarjeta{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--secundary-color);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.valorTarjeta{
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+    color: var(--secundary-color);
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    border-bottom: 3px solid #8fbdd3;
+}
+.tituloInferior{
+    font-size: 1.4rem;
+}
+.inferior input{
+    text-align: center;
+    width: 5%;
+    font-size: 1.3rem;
+}
+.arbolTexto{
+    color: white;
+    
+}
+.valorTarjeta{
+    color: black;
+}
+
+#textArbolCargado{
+    color:black
+}
+#Dato{
+    color:black
+}

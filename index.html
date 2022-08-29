@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arboles </title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class ="container caja">
+            <div class="superior">
+                <h6 class="display-6">INGRESA EL ARBOL</h6>
+                <div class ="inputDatosArbol">
+                    <input id = "inputCargaDatos" type="text" placeholder="Example: (a(b,c))">
+                    <button id ="botonCargarDatos"class="custom-btn btn-1">Cargar</button>
+                </div>
+                <span class ="arbolTexto">Arbol cargado: <span id="textArbolCargado"></span></span>
+                <div class = "tarjetas">
+                    <div class ="tarjeta">
+                        <span class ="tituloTarjeta">Altura del arbol</span>
+                        <div id = "alturaArbol" class ="valorTarjeta"> 0 </div>
+                        <hr>
+                    </div>
+                    <div class ="tarjeta">
+                        <span class ="tituloTarjeta">Grado del arbol</span>
+                        <div id ="gradoArbol"class ="valorTarjeta"> 0 </div>
+                        <hr>
+                    </div>
+                    <div class ="tarjeta">
+                        <span class ="tituloTarjeta">Numero de hojas de arbol</span>
+                        <div id ="numeroHojasArbol"class ="valorTarjeta"> 0 </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="inferior">
+                <div class ="inputDatosArbol">
+                    <h6 class="display-6 tituloInferior">INGRESA DATO</h6>
+                    <input id = "inputCargarDato" type="text" placeholder="a">
+                    <button id ="botonCargarDato" class="custom-btn btn-1">Calcular</button>
+                </div>
+                <span class ="arbolTexto">Dato: <span id="Dato"></span></span>
+                <div class = "tarjetas">
+                    <div class ="tarjeta">
+                        <span class ="tituloTarjeta">Nivel del dato</span>
+                        <div id="nivelDato" class ="valorTarjeta"> 0 </div>
+                        <hr>
+                    </div>
+                    <div class ="tarjeta">
+                        <span class ="tituloTarjeta">Grado del dato</span>
+                        <div id ="gradoDato"class ="valorTarjeta"> 0 </div>
+                        <hr>
+                    </div>
+                    <div class ="tarjeta">
+                        <span class ="tituloTarjeta">Ancestros del dato</span>
+                        <div id ="ancestrosDato"class ="valorTarjeta"> [] </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <script src="./class/arbol.js"></script>
+    <script src="./main.js"></script>
+</html>
